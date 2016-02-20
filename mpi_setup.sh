@@ -56,7 +56,7 @@ make 2>&1 | tee m.txt
 
 # Install the files and go for another walk (<5 minutes)
 echo "Installing...\n"
-make install |& tee mi.txt
+make install 2>&1 | tee mi.txt
 
 # Permanently add the path to where you put the installation files
 echo '# MPI install path' |  tee -a /etc/profile
