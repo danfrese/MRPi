@@ -77,4 +77,4 @@ cd mpi_testing
 
 # Grab the eth0 IPv4 address of this node & adds it to a node manifest log
 myIP = $(/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}')
-echo myIP > machinefile
+echo $myIP > machinefile
