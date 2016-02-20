@@ -22,7 +22,7 @@ apt-get update
 apt-get install gfortran -y
 
 mkdir /home/pi/mpich
-cd ~/mpich
+cd /home/pi/mpich
 
 # Download & unpack the MPI sources
 echo "Downloading and unpacking.\n"
