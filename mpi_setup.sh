@@ -43,7 +43,7 @@ cd /home/pi/mpich_build
 
 # Configure the build and go for a walk (~5 - 10 minutes)
 echo "Building...\n"
-/home/pi/mpich/mpich-3.2/configure -prefix=/home/rpimpi/mpich-install |& tee c.txt
+/home/pi/mpich/mpich-3.2/configure -prefix=/home/rpimpi/mpich-install 2>&1 | tee c.txt
 
 # Make the files and go for another walk (~30 - 45 minutes)
 # This is somewhat dependant on if you've overclocked your Pi or not
