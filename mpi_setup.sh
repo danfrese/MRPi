@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Name: mpi_setup.sh
 # Author: Dan Frese
@@ -60,7 +60,7 @@ make install 2>&1 | tee mi.txt
 
 # Permanently add the path to where you put the installation files
 echo '# MPI install path' |  tee -a /etc/profile
-echo 'PATH="$PATH:/home/rpimpi/mpich-install/bin"' |  tee -a /etc/profile
+echo 'PATH="$PATH:/home/rpimpi/mpich-install/bin:/home/pi/camino/bin:/opt/jdk1.8.0_73/bin/java"' |  tee -a /etc/profile
 
 # Check whether things were installed or not
 # TODO: check if the make and make install were successful
