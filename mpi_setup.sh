@@ -59,7 +59,7 @@ echo "\nInstalling...\n"
 make install 2>&1 | tee mi.txt
 
 # Permanently add the path to where you put the installation files
-echo '# MPI install path' |  tee -a /etc/profile
+echo '\n# MPI install path' |  tee -a /etc/profile
 echo 'PATH="$PATH:/home/rpimpi/mpich-install/bin:/home/pi/camino/bin:/opt/jdk1.8.0_73/bin/java"' |  tee -a /etc/profile
 
 # Check whether things were installed or not
